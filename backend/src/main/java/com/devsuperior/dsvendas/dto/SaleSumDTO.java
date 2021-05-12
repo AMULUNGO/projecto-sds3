@@ -7,7 +7,7 @@ import com.devsuperior.dsvendas.entities.Seller;
 public class SaleSumDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	private String salesName;
+	private String sellerName;
 	private Double sum;
 
 	public SaleSumDTO() {
@@ -16,16 +16,16 @@ public class SaleSumDTO implements Serializable {
 
 	public SaleSumDTO(Seller seller, Double sum) {
 		// super();
-		this.salesName = seller.getName();
+		this.sellerName = seller.getName();
 		this.sum = sum;
 	}
 
-	public String getSalesName() {
-		return salesName;
+	public String getSellerName() {
+		return sellerName;
 	}
 
-	public void setSalesName(String salesName) {
-		this.salesName = salesName;
+	public void setSellerName(String sellerName) {
+		this.sellerName = sellerName;
 	}
 
 	public Double getSum() {
