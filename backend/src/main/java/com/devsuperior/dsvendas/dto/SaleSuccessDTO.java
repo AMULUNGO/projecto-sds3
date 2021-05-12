@@ -7,7 +7,7 @@ import com.devsuperior.dsvendas.entities.Seller;
 public class SaleSuccessDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	private String salesName;
+	private String sellerName;
 	private Long visited;
 	private Long deals;
 
@@ -17,17 +17,17 @@ public class SaleSuccessDTO implements Serializable {
 
 	public SaleSuccessDTO(Seller seller, Long visited, Long deals) {
 		// super();
-		salesName = seller.getName();
+		sellerName = seller.getName();
 		this.visited = visited;
 		this.deals = deals;
 	}
 
-	public String getSalesName() {
-		return salesName;
+	public String getSellerName() {
+		return sellerName;
 	}
 
-	public void setSalesName(String salesName) {
-		this.salesName = salesName;
+	public void setSellerName(String sellerName) {
+		this.sellerName = sellerName;
 	}
 
 	public Long getVisited() {
